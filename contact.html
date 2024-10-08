@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="Nuvia Test.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Tests</a>
+                    <div class="dropdown-content">
+                        <a href="bar-technician.html">Bar Technician</a>
+                        <a href="lab-technician.html">Lab Technician</a>
+                        <a href="articulator.html">Articulator</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Form -->
+    <div class="container">
+        <h1 class="main-title">Contact Kruz</h1>
+
+        <form action="https://formspree.io/f/xovqardp" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+<footer>
+        <p>&copy; 2024 Nuvia Dental Implant Center</p>
+    </footer>
+</html>
