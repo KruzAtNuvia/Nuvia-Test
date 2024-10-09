@@ -1,15 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;    
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
+/* html{
     height: 100%;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-}
+} */
 
 body {
     display: flex;
@@ -22,8 +30,17 @@ nav {
     background-color: #0066cc;
     padding: 10px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
+.nav-list a:hover {
+    background-color: #004099;
+    border-bottom: 1.5px solid #fff;
+    border-radius: 0;
+    transition: border-bottom 0.3s ease-in-out;
+}
 .nav-list {
     list-style: none;
     display: flex;
@@ -41,11 +58,6 @@ nav {
     text-decoration: none;
     padding: 10px;
     font-size: 1.1em;
-}
-
-.nav-list a:hover {
-    background-color: #004099;
-    border-radius: 5px;
 }
 
 .dropdown {
@@ -82,16 +94,17 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 .main-title {
-    font-size: 2em;
+    font-size: 2.5em;
     color: #0066cc;
+    margin-bottom: 20px;
 }
 
 .image-container {
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 .nuvia_banner {
@@ -121,23 +134,37 @@ nav {
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .test-button:hover {
     background-color: #004099;
+    transform: scale(1.05);
 }
 
 footer {
-    background-color: black;
+    background-color: #333;
     color: #fff;
-    padding: 1px 0;
-    font-size: 0.5em;
+    padding: 10px 0;
+    font-size: 1em;
     text-align: center;
     width: 100%;
-    position: absolute;
-    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 form {
@@ -167,7 +194,7 @@ input, textarea {
     border: none;
     border-radius: 5px;
     font-size: 1.1em;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: background-color 0.3s ease;
 }
 
@@ -176,4 +203,45 @@ input, textarea {
 }
 .hide{
     display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .test-button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .main-title {
+        font-size: 2em;
+    }
+}
+.select-test{
+    background-color: lightgrey;
+    font-size: 1.75em;
+    position: relative;
+    max-width: 500px; 
+    margin: 0 auto; 
+    padding: 10px; 
+    text-align: center; 
+    border-radius: 5px;
+}
+.red-text{
+    color:red;
+    font-style: bold;
+}
+.important-messages{
+    background-color: lightgrey;
+    position: relative;
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 900px;
+    margin-bottom: 30px;
 }
