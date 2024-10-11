@@ -247,3 +247,8 @@ input, textarea {
     max-width: 900px;
     margin-bottom: 30px;
 }
+
+.background.image {
+    z-index: -1000;
+    
+}
