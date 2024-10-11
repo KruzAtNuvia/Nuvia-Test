@@ -21,13 +21,13 @@ body {
 /* Navigation Bar */
 nav {
     background-color: white;
-    padding: 10px 40px; /* Adjust padding for better alignment */
+    padding: 10px 40px;
     position: sticky;
     top: 0;
     z-index: 1000;
     display: flex;
-    justify-content: space-between; /* Ensures space between logo and nav */
-    align-items: center; /* Vertically aligns the items */
+    justify-content: space-between; 
+    align-items: center; 
     box-sizing: border-box;
     width:100%; 
 }   
@@ -108,11 +108,13 @@ nav {
 }
 
 .image-container {
-    flex-shrink: 0; /* Prevents the logo from shrinking */
+    flex-shrink: 0; 
 }
 
 .nuvia_banner {
-    width: 125px; /* Adjust as needed */
+    width: 125px; 
+    height:auto;
+    max-width:150px
 }
 
 .test-links {
@@ -196,7 +198,7 @@ input, textarea {
     border: none;
     border-radius: 5px;
     font-size: 1.1em;
-    /* cursor: pointer; */
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
@@ -248,7 +250,9 @@ input, textarea {
     margin-bottom: 30px;
 }
 
-.background.image {
+.background-image {
     z-index: -1000;
+    height:300px;
     
+
 }
