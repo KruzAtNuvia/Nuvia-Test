@@ -68,7 +68,7 @@ nav {
 .dropdown-content {
     display: none;
     position: absolute;
-    margin-top: 12px;
+    margin-top: 8px;
     right: -54px;
     background-color: #0066cc;
     min-width: 160px;
@@ -252,7 +252,8 @@ input, textarea {
 
 .background-image {
     z-index: -1000;
-    height:300px;
+    height:auto;
+    width:1600px;
     
 
 }
