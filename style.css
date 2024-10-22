@@ -253,7 +253,7 @@ input, textarea {
 .background-image {
     z-index: -1000;
     height:auto;
-    width:1600px;
+    width:100%;
     
 
 }
