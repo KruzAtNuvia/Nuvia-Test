@@ -1,1 +1,1 @@
-WIP 
+The very FIRST iteration of the Nuvia Directory. This is what started the idea of the Directory. I built this page to host all the tests that I created and needed to 'proctor' throughout the company. 
